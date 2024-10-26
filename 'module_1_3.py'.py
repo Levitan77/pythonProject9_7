@@ -1,9 +1,10 @@
-name = "Алексей"
-print(name)
+name = 'Alexey'
+print('Name:' + name)
 age = 37
-print(age)
-new_age = (age + 1)
-print(new_age)
-is_student = True
-print(is_student)
-print("Name:", name, "\nAge:", age, "\nNew age:", new_age, "\nIs Student:", is_student)
+print('Age:', age)
+age = (age+1)
+new_age = 38
+print('New age:', age)
+# is_student= age<age+1
+is_student = new_age == age
+print('Is_student:', is_student)
