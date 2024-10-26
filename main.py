@@ -1,13 +1,9 @@
+print('Hi, PyCharm')
 
-# 4th program
-a = 'example'
+x = 43
 
-print(a[0])
+y = 32
 
-print(a[-1])
+print(x * y)
 
-print(a[5:])
-
-print(a[::-1])
-
-print(a[1::2])
+print("End line")
