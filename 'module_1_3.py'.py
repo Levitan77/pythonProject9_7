@@ -1,6 +1,8 @@
-example = 'Топинамбур'
-print(example[0])
-print(example[-1])
-print(example[5:])
-print(example[::-1])
-print(example[1::2])
+name = "Alexey"
+print(name)
+age = 37
+print(age)
+age = (age + 1)
+print(age)
+is_student = True
+print(is_student)
