@@ -7,7 +7,7 @@ def trap(n):
         for j in range(i + 1, n + 1):
             if n % (i + j) == 0:
                 unique += str(i) + str(j)
-    return f'{n} - {unique}\nПоздравляю вас не раздавят'
+    return f'{n} - {unique}\nПоздравляю вы не станете лепешкой'
 
 
 #  way 1
