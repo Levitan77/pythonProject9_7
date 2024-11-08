@@ -1,7 +1,7 @@
 my_dict={'Alexander': 1990, 'Anna':2002,'Victor':2020}
 print(my_dict)
 print(my_dict['Victor'])
-print(my_dict.get('Anna'),': None')
+print(my_dict.get('Елесей',': None'))
 my_dict.update({'Герман':2001,
                'Анастасия':2015})
 removed_year = my_dict.pop('Анастасия')
