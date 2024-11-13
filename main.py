@@ -1,13 +1,12 @@
-#"1st program"
-print(9**0.5*5)
+from fake_math import *
+from true_math import *
 
-#"2nd program"
-print(9.99>9.98)and(1000!=100.1)
 
-#"3rd program"
-print(2*2+2)
-print(2*(2+2))
-print(2*2+2==2*(2+2))
-
-#"4th program"
-print(int((float('123.456'))*10)%10)
+result1 = fake_divide(69, 3)
+result2 = fake_divide(3, 0)
+result3 = true_divide(49, 7)
+result4 = true_divide(15, 0)
+print(result1)
+print(result2)
+print(result3)
+print(result4)
