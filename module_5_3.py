@@ -30,24 +30,27 @@ class House:
        return title
 
     def __eq__(self, other):    # 1
-        if isinstance(other.number_of_floors, int) and isinstance(other, House):
+        if isinstance(other, House):
             return self.number_of_floors == other.number_of_floors
+        elif  isinstance (other, int):
+            return self.number_of_floors == other
 
     def __lt__(self, other):    # 2
         if isinstance(other.number_of_floors, int) and isinstance(other, House):
             return self.number_of_floors < other.number_of_floors
+        elif  isinstance (other, int):
+            return self.number_of_floors < other
 
     def __le__(self, other):
-        if isinstance(other.number_of_floors, int) and isinstance(other, House):
-            return self.number_of_floors <= other.number_of_floors
+        return self.__eq__(other) or self.__lt__(other)
+
+
 
     def __gt__(self, other):
-        if isinstance(other.number_of_floors, int) and isinstance(other, House):
-            return self.number_of_floors > other.number_of_floors
+        return not self.__le__(other)
 
     def __ge__(self, other):
-        if isinstance(other.number_of_floors, int) and isinstance(other, House):
-            return self.number_of_floors >= other.number_of_floors
+        return not self.__lt__(other)
 
     def __ne__(self, other):
         if isinstance(other.number_of_floors, int) and isinstance(other, House):
@@ -62,9 +65,7 @@ class House:
         return self.__add__(value)
 
     def __iadd__(self, value):
-        if isinstance(value, int):
-            self.number_of_floors += value
-        return self
+        return self.__add__(value)
 
 
 hightower = House('Башня', 12)
